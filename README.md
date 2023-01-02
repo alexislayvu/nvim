@@ -1,6 +1,8 @@
 # nvim
 My personal nvim configuration @_@
 
+WIP --still have to add more keybinds
+
 # Keybinds
 
 ## remap.lua
