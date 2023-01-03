@@ -1,6 +1,8 @@
 # nvim
 My personal nvim configuration @_@
 
+WIP --still have to add more keybinds
+
 # Keybinds
 
 ## remap.lua
@@ -24,7 +26,7 @@ My personal nvim configuration @_@
 ## harpoon.lua
 #### Normal Mode
 - `<leader>a`: add file to Harpoon menu
-- `Ctrl e`: open Harpoon menu
+- `Ctrl e`: toggle Harpoon menu
 - `Ctrl h`: navigate to Harpoon file 1
 - `Ctrl t`: navigate to Harpoon file 2
 - `Ctrl n`: navigate to Harpoon file 3
@@ -40,4 +42,4 @@ My personal nvim configuration @_@
 
 ## undotree.lua
 #### Normal Mode
-- `<leader>u`: open undo tree 
+- `<leader>u`: toggle undo tree
