@@ -1,7 +1,5 @@
 # nvim
-My personal nvim configuration @_@
 
-WIP --still have to add more keybinds
 
 # Keybinds
 
@@ -9,7 +7,14 @@ WIP --still have to add more keybinds
 - `<leader>` = " " (spacebar)
 #### Normal Mode
 - `<leader>pv`: get back into netrw (equivalent to `:Ex`)
-
+- `J`: append line below to current line with a space
+- `Ctrl d`: jump down half page while keeping cursor in the middle
+- `Ctrl u`: jump up half page while keeping cursor in the middle
+- `n`: when searching for a word, find next instance while keeping cursor in the middle
+- `N`: when searching for a word, find previous instance while keeping cursor in the middle
+- `<leader>p`: replace highlighted word with current paste buffer (while preserving it)
+- `<leader>f`: format code
+- `<leader>s`: find and replace all instances of the word the cursor was on with something else
 
 #### Visual Mode
 - `J`: move highlighted text down
@@ -43,3 +48,8 @@ WIP --still have to add more keybinds
 ## undotree.lua
 #### Normal Mode
 - `<leader>u`: toggle undo tree
+
+
+## zenmode.lua
+#### Normal Mode
+- `<leader>zz`: toggle zen mode
