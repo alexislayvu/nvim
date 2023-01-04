@@ -7,30 +7,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
-
-  -- dracula theme
-  use 'Mofiqul/dracula.nvim'  
-
-  -- treesitter
-  use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
-
-  -- treesitter playground 
-  use('nvim-treesitter/playground')
-
-  -- harpoon
-  use('theprimeagen/harpoon')
-
-  -- undotree
-  use('mbbill/undotree')
-
-  -- fugitive
-  use('tpope/vim-fugitive')
-
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -54,7 +30,33 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  -- zen mode
-  use("folke/zen-mode.nvim")
+  -- git related plugins
+  use('tpope/vim-fugitive')
+  use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+          require('gitsigns').setup()
+      end
+  }
+
+  -- fuzzy finder
+  use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  -- or                            , branch = '0.1.x',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use('Mofiqul/dracula.nvim') -- dracula theme 
+  use('theprimeagen/harpoon') -- mark and create key strokes to go to the files you want
+  use('mbbill/undotree') -- visualize the undo history
+  use('nvim-lualine/lualine.nvim') -- fancier statusline
+  use("folke/zen-mode.nvim") -- distraction free coding
+  use('lukas-reineke/indent-blankline.nvim') -- add indentation guidelines even on blank lines
+
+  -- highlight, edit, and navigate code
+  use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+
+  -- treesitter playground 
+  use('nvim-treesitter/playground')
 
 end)
