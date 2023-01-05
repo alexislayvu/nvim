@@ -1,5 +1,5 @@
 # nvim
-
+Personal nvim configuration :-)
 
 # Keybinds
 
@@ -23,9 +23,12 @@
 #### Insert Mode
 - `Ctrl c`: enter Normal Mode (equivalent to pressing `Esc`)
 
+
 ## fugitive.lua
 #### Normal Mode
 - `<leader>gs`: git status
+- `<leader>gpl`: git pull
+- `<leader>gp`: git push
 
 
 ## harpoon.lua
@@ -38,10 +41,31 @@
 - `Ctrl s`: navigate to Harpoon file 4
 
 
+## lsp.lua
+#### Normal Mode
+- `K`: display hover information about the symbol under the cursor in a floating window
+- `gd`: jumps to the definition of the symbol under the cursor
+- `gD`: jumps to the declaration of the symbol under the cursor
+- `gi`: lists all the implementations for the symbol under the cursor in the quickfix window
+- `go`: jumps to the definition of the type of the symbol under the cursor
+- `gr`: lists all the references to the symbol under the cursor in the quickfix window
+- `Ctrl k`: displays signature information about the symbol under the cursor in a floating window
+- `F2`: renames all references to the symbol under the cursor
+- `F4`: selects a code action available at the current cursor position
+- `gl`: show diagnostics in a floating window
+- `[d`: move to the previous diagnostic in the current buffer
+- `d]`: move to the next diagnostic
+
+
+## nvimtree.lua
+#### Normal Mode
+- `Ctrl f`: toggle nvim tree
+
+
 ## telescope.lua
 #### Normal Mode
-- `<leader>pf`: search project files
-- `Ctrl p`: search git files
+- `<leader>ff`: find file
+- `<leader>fg`: find git file
 - `<leader>ps`: search project files for a word
 
 
