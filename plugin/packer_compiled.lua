@@ -205,6 +205,11 @@ _G.packer_plugins = {
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-sleuth"] = {
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/vim-sleuth",
+    url = "https://github.com/tpope/vim-sleuth"
+  },
   ["zen-mode.nvim"] = {
     loaded = true,
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
