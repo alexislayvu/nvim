@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
   use('nvim-lualine/lualine.nvim') -- fancier statusline
   use("folke/zen-mode.nvim") -- distraction free coding
   use('lukas-reineke/indent-blankline.nvim') -- add indentation guidelines even on blank lines
+  use('tpope/vim-sleuth') -- detect tabstop and shiftwidth automatically
 
   -- highlight, edit, and navigate code
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
