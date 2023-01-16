@@ -24,3 +24,7 @@ vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true,
+})
