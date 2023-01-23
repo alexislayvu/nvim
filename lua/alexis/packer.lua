@@ -53,6 +53,9 @@ return require('packer').startup(function(use)
   use("folke/zen-mode.nvim") -- distraction free coding
   use('lukas-reineke/indent-blankline.nvim') -- add indentation guidelines even on blank lines
   use('tpope/vim-sleuth') -- detect tabstop and shiftwidth automatically
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'} -- tabline
+  use('RRethy/vim-illuminate') -- highlight other uses of the word under cursor
+  use('numToStr/Comment.nvim') -- commenting plugin
 
   -- highlight, edit, and navigate code
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
@@ -68,5 +71,17 @@ return require('packer').startup(function(use)
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+
+  -- VSCode-like winbar
+  use({
+      "utilyre/barbecue.nvim",
+      requires = {
+	  "neovim/nvim-lspconfig",
+	  "SmiteshP/nvim-navic",
+      },
+      config = function()
+	  require("barbecue").setup()
+      end,
+  })
 
 end)
