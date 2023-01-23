@@ -27,7 +27,7 @@ require("barbecue").setup({
 require('bufferline').setup{}
 
 vim.cmd [[highlight BufferLineFill guibg=none]]
-vim.cmd [[highlight BufferLineBackground guifg=#7a7c9e, guibg=none]]
+vim.cmd [[highlight BufferLineBackground guifg=#7a7c9e guibg=none]]
 vim.cmd [[highlight BufferLineBufferSelected guifg=white guibg=none]]
 
 --vim.cmd("hi IlluminatedWordText guibg=#239e79")
