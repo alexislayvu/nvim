@@ -74,10 +74,26 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["barbecue.nvim"] = {
+    config = { "\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rbarbecue\frequire\0" },
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -160,6 +176,11 @@ _G.packer_plugins = {
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -205,6 +226,11 @@ _G.packer_plugins = {
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/alexis/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-sleuth"] = {
     loaded = true,
     path = "/home/alexis/.local/share/nvim/site/pack/packer/start/vim-sleuth",
@@ -222,6 +248,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: barbecue.nvim
+time([[Config for barbecue.nvim]], true)
+try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rbarbecue\frequire\0", "config", "barbecue.nvim")
+time([[Config for barbecue.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
